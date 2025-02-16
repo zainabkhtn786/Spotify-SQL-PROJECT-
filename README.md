@@ -16,47 +16,66 @@ The dataset consists of the following attributes:
 🎤 artist: The performer of the track.
 
 🎵 track: The song name.
+
 💽 album: The album name.
+
 📊 album_type: Whether it’s a single or album.
+
 🔥 danceability, energy, loudness, tempo: Track audio characteristics.
+
 🎥 views, likes, comments: YouTube engagement metrics.
+
 📡 streams: Spotify streaming data.
 
 #### 🔍 Project Steps
 ##### 1️⃣ Data Exploration
-Understand the dataset structure and attributes.
-Identify key columns such as artist, track, album, danceability, energy, views, likes, etc.
+a.Understand the dataset structure and attributes.
+b.Identify key columns such as artist, track, album, danceability, energy, views, likes, etc.
 
 ##### 2️⃣ Database Setup & Schema Creation
-Create a normalized database from a denormalized dataset.
-Define a Spotify table with appropriate data types.
-Insert sample data into the table for analysis.
+a.Create a normalized database from a denormalized dataset.
+b.Define a Spotify table with appropriate data types.
+c.Insert sample data into the table for analysis.
 
 ##### 3️⃣ SQL Querying - Retrieving Insights
 🔹 Easy Level Queries
-Retrieve the names of all tracks that have more than 1 billion streams.
-List all albums along with their respective artists.
-Get the total number of comments for tracks where licensed = TRUE.
-Find all tracks that belong to the album type ‘Single’.
-Count the total number of tracks by each artist.
+
+a.Retrieve the names of all tracks that have more than 1 billion streams.
+
+b.List all albums along with their respective artists.
+
+c.Get the total number of comments for tracks where licensed = TRUE.
+
+d.Find all tracks that belong to the album type ‘Single’.
+
+e.Count the total number of tracks by each artist.
 
 🔹 Medium Level Queries
-Calculate the average danceability of tracks in each album.
-Find the top 5 tracks with the highest energy values.
-List all tracks along with their views and likes where official_video = TRUE.
-For each album, calculate the total views of all associated tracks.
-Retrieve track names that have been streamed more on Spotify than YouTube.
+a.Calculate the average danceability of tracks in each album.
+
+b.Find the top 5 tracks with the highest energy values.
+
+c.List all tracks along with their views and likes where official_video = TRUE.
+
+d.For each album, calculate the total views of all associated tracks.
+
+e.Retrieve track names that have been streamed more on Spotify than YouTube.
 
 #### 📈 Insights & Findings
-🔥 Track Popularity: The most streamed track has over 1 billion plays.
-🎧 Album Analysis: Some albums have higher engagement than singles.
-📊 Energy & Danceability: Songs with higher energy tend to have more views.
-📢 Streaming Trends: Some tracks perform better on Spotify than YouTube.
+a.🔥 Track Popularity: The most streamed track has over 1 billion plays.
+
+b.🎧 Album Analysis: Some albums have higher engagement than singles.
+
+c.📊 Energy & Danceability: Songs with higher energy tend to have more views.
+
+d.📢 Streaming Trends: Some tracks perform better on Spotify than YouTube.
 
 #### 🛠 Technology Stack
-Database: PostgreSQL
-SQL Tools: pgAdmin 4 / DBeaver
-Query Types: Joins, Aggregations, Filtering, Grouping
+a.Database: PostgreSQL
+
+b.SQL Tools: pgAdmin 4 / DBeaver
+
+c.Query Types: Joins, Aggregations, Filtering, Grouping
 
 #### 🎯 Conclusion
 This project demonstrates the power of SQL in analyzing music data, providing key insights into track popularity, engagement, and streaming trends.
