@@ -4,7 +4,7 @@
 
 ### 📌 Analyzing Spotify tracks using SQL queries for data insights.
 
-#### 📌 Overview
+#### 1. 📌 Overview
 This project explores a Spotify dataset containing details about tracks, albums, and artists. The primary goal is to apply SQL queries for data extraction, aggregation, and pattern identification.
 ```
 sql
@@ -40,14 +40,14 @@ CREATE TABLE spotify (
 );
 ```
 
-#### 🚀 Objectives
+#### 2. 🚀 Objectives
 a. Explore and understand the dataset.
 
 b. Perform SQL queries of varying complexity (easy & medium levels).
 
 c. Derive insights using aggregation and joins.
 
-#### 📂 Dataset Description
+#### 3. 📂 Dataset Description
 The dataset consists of the following attributes:
 
 🎤 artist: The performer of the track.
@@ -64,7 +64,7 @@ The dataset consists of the following attributes:
 
 📡 streams: Spotify streaming data.
 
-#### 🔍 Project Steps
+#### 4. 🔍 Project Steps
 ##### 1️⃣ Data Exploration
 a. Understand the dataset structure and attributes.
 b. Identify key columns such as artist, track, album, danceability, energy, views, likes, etc.
@@ -183,7 +183,7 @@ FROM (
 WHERE streamed_on_spotify > streamed_on_youtube;
 ```
 
-#### 📈 Insights & Findings
+#### 5. 📈 Insights & Findings
 a. 🔥 Track Popularity: The most streamed track has over 1 billion plays.
 
 b. 🎧 Album Analysis: Some albums have higher engagement than singles.
@@ -192,14 +192,14 @@ c. 📊 Energy & Danceability: Songs with higher energy tend to have more views.
 
 d. 📢 Streaming Trends: Some tracks perform better on Spotify than YouTube.
 
-#### 🛠 Technology Stack
+#### 🛠 6. Technology Stack
 a. Database: PostgreSQL
 
 b. SQL Tools: pgAdmin 4 / DBeaver
 
 c. Query Types: Joins, Aggregations, Filtering, Grouping
 
-#### 🎯 Conclusion
+#### 🎯 7. Conclusion
 This project demonstrates the power of SQL in analyzing music data, providing key insights into track popularity, engagement, and streaming trends.
 
 
