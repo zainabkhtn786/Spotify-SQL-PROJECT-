@@ -10,6 +10,7 @@ Explore and understand the dataset.
 Perform SQL queries of varying complexity (easy & medium levels).
 Derive insights using aggregation and joins.
 Create basic visualizations to represent key trends.
+
 📂 Dataset Description
 The dataset consists of the following attributes:
 
@@ -20,6 +21,7 @@ The dataset consists of the following attributes:
 🔥 danceability, energy, loudness, tempo: Track audio characteristics.
 🎥 views, likes, comments: YouTube engagement metrics.
 📡 streams: Spotify streaming data.
+
 🔍 Project Steps
 1️⃣ Data Exploration
 Before querying, an initial exploratory analysis was performed using:
