@@ -7,6 +7,7 @@
 #### 📌 Overview
 This project explores a Spotify dataset containing details about tracks, albums, and artists. The primary goal is to apply SQL queries for data extraction, aggregation, and pattern identification.
 ```
+sql
 -- create table
 DROP TABLE IF EXISTS spotify;
 CREATE TABLE spotify (
@@ -34,7 +35,8 @@ CREATE TABLE spotify (
     stream BIGINT,
     energy_liveness FLOAT,
     most_played_on VARCHAR(50)
-);```
+);
+```
 
 #### 🚀 Objectives
 a. Explore and understand the dataset.
@@ -84,12 +86,40 @@ WHERE streams > 1000000000;
 ```
 
 b. List all albums along with their respective artists.
+```
+sql
+SELECT DISTINCT album, artist 
+FROM spotify;
+
+```
 
 c. Get the total number of comments for tracks where licensed = TRUE.
+```
+sql
+
+SELECT SUM(comments) AS total_comments 
+FROM spotify 
+WHERE licensed = TRUE;
+```
 
 d. Find all tracks that belong to the album type ‘Single’.
+```
+sql
+
+SELECT track, album 
+FROM spotify 
+WHERE album_type = 'single';
+```
 
 e. Count the total number of tracks by each artist.
+```
+sql
+SELECT artist, COUNT(track) AS total_tracks 
+FROM spotify 
+GROUP BY artist 
+ORDER BY total_tracks DESC;
+
+```
 
 🔹 Medium Level Queries
 
