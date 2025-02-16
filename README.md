@@ -8,7 +8,9 @@
 This project explores a Spotify dataset containing details about tracks, albums, and artists. The primary goal is to apply SQL queries for data extraction, aggregation, and pattern identification.
 ```
 sql
+
 -- create table
+
 DROP TABLE IF EXISTS spotify;
 CREATE TABLE spotify (
     artist VARCHAR(255),
@@ -88,6 +90,7 @@ WHERE streams > 1000000000;
 b. List all albums along with their respective artists.
 ```
 sql
+
 SELECT DISTINCT album, artist 
 FROM spotify;
 
@@ -114,6 +117,7 @@ WHERE album_type = 'single';
 e. Count the total number of tracks by each artist.
 ```
 sql
+
 SELECT artist, COUNT(track) AS total_tracks 
 FROM spotify 
 GROUP BY artist 
@@ -124,14 +128,60 @@ ORDER BY total_tracks DESC;
 🔹 Medium Level Queries
 
 a. Calculate the average danceability of tracks in each album.
+```
+sql
+
+SELECT album, AVG(danceability) AS avg_danceability 
+FROM spotify 
+GROUP BY album;
+
+```
 
 b. Find the top 5 tracks with the highest energy values.
+```
+sql
+
+SELECT track, energy 
+FROM spotify 
+ORDER BY energy DESC 
+LIMIT 5;
+```
 
 c. List all tracks along with their views and likes where official_video = TRUE.
+```
+sql
+
+SELECT track, views, likes 
+FROM spotify 
+WHERE official_video = TRUE 
+ORDER BY views DESC;
+```
 
 d. For each album, calculate the total views of all associated tracks.
+```
+sql
+
+SELECT album, SUM(views) AS total_views 
+FROM spotify 
+GROUP BY album 
+ORDER BY total_views DESC;
+```
 
 e. Retrieve track names that have been streamed more on Spotify than YouTube.
+```
+sql
+
+SELECT * 
+FROM (
+    SELECT 
+        track,
+        COALESCE(SUM(CASE WHEN most_played_on = 'Youtube' THEN stream END), 0) AS streamed_on_youtube,
+        COALESCE(SUM(CASE WHEN most_played_on = 'Spotify' THEN stream END), 0) AS streamed_on_spotify
+    FROM spotify
+    GROUP BY track
+) AS t1
+WHERE streamed_on_spotify > streamed_on_youtube;
+```
 
 #### 📈 Insights & Findings
 a. 🔥 Track Popularity: The most streamed track has over 1 billion plays.
