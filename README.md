@@ -53,6 +53,7 @@ d.Find all tracks that belong to the album type ‘Single’.
 e.Count the total number of tracks by each artist.
 
 🔹 Medium Level Queries
+
 a.Calculate the average danceability of tracks in each album.
 
 b.Find the top 5 tracks with the highest energy values.
