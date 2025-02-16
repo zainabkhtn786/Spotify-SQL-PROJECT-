@@ -72,15 +72,19 @@ The dataset consists of the following attributes:
 
 ##### 1️⃣ Data Exploration
 a. Understand the dataset structure and attributes.
+
 b. Identify key columns such as artist, track, album, danceability, energy, views, likes, etc.
 
 ##### 2️⃣ Database Setup & Schema Creation
 a. Create a normalized database from a denormalized dataset.
+
 b. Define a Spotify table with appropriate data types.
+
 c. Insert sample data into the table for analysis.
 
 
 ##### 3️⃣ SQL Querying - Retrieving Insights
+
 🔹 Easy Level Queries
 
 a. Retrieve the names of all tracks that have more than 1 billion streams.
@@ -130,6 +134,9 @@ GROUP BY artist
 ORDER BY total_tracks DESC;
 
 ```
+
+
+
 
 🔹 Medium Level Queries
 
@@ -209,7 +216,7 @@ c. Query Types: Joins, Aggregations, Filtering, Grouping
 
 
 
-#### 🎯 7. Conclusion
+#### 7. 🎯 Conclusion
 This project demonstrates the power of SQL in analyzing music data, providing key insights into track popularity, engagement, and streaming trends.
 
 
