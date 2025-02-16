@@ -200,7 +200,7 @@ c. 📊 Energy & Danceability: Songs with higher energy tend to have more views.
 d. 📢 Streaming Trends: Some tracks perform better on Spotify than YouTube.
 
 
-#### 🛠 6. Technology Stack
+#### 6. 🛠 Technology Stack
 a. Database: PostgreSQL
 
 b. SQL Tools: pgAdmin 4 / DBeaver
