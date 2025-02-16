@@ -1,5 +1,5 @@
-# Spotify-SQL-PROJECT-
-## 🎵 Spotify Advanced SQL Project
+![spotify_logo](https://github.com/user-attachments/assets/f18951d7-3130-49f8-aa5c-f7ee23ba5b46)# 🎵 Spotify Advanced SQL Project
+
 ### 📌 Analyzing Spotify tracks using SQL queries for data insights.
 
 #### 📌 Overview
