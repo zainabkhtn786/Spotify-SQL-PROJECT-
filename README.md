@@ -7,7 +7,9 @@ This project explores a Spotify dataset containing details about tracks, albums,
 
 #### 🚀 Objectives
 a.Explore and understand the dataset.
+
 b.Perform SQL queries of varying complexity (easy & medium levels).
+
 c.Derive insights using aggregation and joins.
 
 #### 📂 Dataset Description
