@@ -40,12 +40,15 @@ CREATE TABLE spotify (
 );
 ```
 
+
 #### 2. 🚀 Objectives
 a. Explore and understand the dataset.
 
 b. Perform SQL queries of varying complexity (easy & medium levels).
 
 c. Derive insights using aggregation and joins.
+
+
 
 #### 3. 📂 Dataset Description
 The dataset consists of the following attributes:
@@ -64,7 +67,9 @@ The dataset consists of the following attributes:
 
 📡 streams: Spotify streaming data.
 
+
 #### 4. 🔍 Project Steps
+
 ##### 1️⃣ Data Exploration
 a. Understand the dataset structure and attributes.
 b. Identify key columns such as artist, track, album, danceability, energy, views, likes, etc.
@@ -73,6 +78,7 @@ b. Identify key columns such as artist, track, album, danceability, energy, view
 a. Create a normalized database from a denormalized dataset.
 b. Define a Spotify table with appropriate data types.
 c. Insert sample data into the table for analysis.
+
 
 ##### 3️⃣ SQL Querying - Retrieving Insights
 🔹 Easy Level Queries
@@ -183,6 +189,7 @@ FROM (
 WHERE streamed_on_spotify > streamed_on_youtube;
 ```
 
+
 #### 5. 📈 Insights & Findings
 a. 🔥 Track Popularity: The most streamed track has over 1 billion plays.
 
@@ -192,12 +199,15 @@ c. 📊 Energy & Danceability: Songs with higher energy tend to have more views.
 
 d. 📢 Streaming Trends: Some tracks perform better on Spotify than YouTube.
 
+
 #### 🛠 6. Technology Stack
 a. Database: PostgreSQL
 
 b. SQL Tools: pgAdmin 4 / DBeaver
 
 c. Query Types: Joins, Aggregations, Filtering, Grouping
+
+
 
 #### 🎯 7. Conclusion
 This project demonstrates the power of SQL in analyzing music data, providing key insights into track popularity, engagement, and streaming trends.
