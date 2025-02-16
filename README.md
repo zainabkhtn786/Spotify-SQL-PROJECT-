@@ -45,6 +45,14 @@ c. Insert sample data into the table for analysis.
 🔹 Easy Level Queries
 
 a. Retrieve the names of all tracks that have more than 1 billion streams.
+'''
+sql
+
+SELECT track, streams 
+FROM spotify 
+WHERE streams > 1000000000;
+
+'''
 
 b. List all albums along with their respective artists.
 
