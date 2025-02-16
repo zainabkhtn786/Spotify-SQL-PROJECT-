@@ -1,6 +1,6 @@
 # Spotify-SQL-PROJECT-
-🎵 Spotify Advanced SQL Project
-📌 Analyzing Spotify tracks using SQL queries for data insights.
+##🎵 Spotify Advanced SQL Project
+###📌 Analyzing Spotify tracks using SQL queries for data insights.
 
 📌 Overview
 This project explores a Spotify dataset containing details about tracks, albums, and artists. The primary goal is to apply SQL queries for data extraction, aggregation, and pattern identification.
