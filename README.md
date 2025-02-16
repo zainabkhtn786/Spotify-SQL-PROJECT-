@@ -6,15 +6,15 @@
 This project explores a Spotify dataset containing details about tracks, albums, and artists. The primary goal is to apply SQL queries for data extraction, aggregation, and pattern identification.
 
 #### 🚀 Objectives
-Explore and understand the dataset.
-Perform SQL queries of varying complexity (easy & medium levels).
-Derive insights using aggregation and joins.
-Create basic visualizations to represent key trends.
+a.Explore and understand the dataset.
+b.Perform SQL queries of varying complexity (easy & medium levels).
+c.Derive insights using aggregation and joins.
 
 #### 📂 Dataset Description
 The dataset consists of the following attributes:
 
 🎤 artist: The performer of the track.
+
 🎵 track: The song name.
 💽 album: The album name.
 📊 album_type: Whether it’s a single or album.
